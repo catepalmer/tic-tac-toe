@@ -16,10 +16,10 @@ const StyledSquare = styled.div`
 `
 StyledSquare.displayName = 'StyledSquare'
 
-export default function Square (props) {
+export default function Square ({ index, player }) {
   return (
-    <StyledSquare index={props.index} player={props.player}>
-      {props.player}
+    <StyledSquare index={index} player={player}>
+      {player}
     </StyledSquare>
   )
 }
